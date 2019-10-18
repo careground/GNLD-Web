@@ -1,0 +1,29 @@
+.login {
+    display: flex;
+    margin-left: 400px;
+    float: left;
+    position: fixed;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.login .form-signin {
+    margin-left: 100px;
+}
+
+.login .form-signin .sr-only2 {
+    margin-right: 145px;
+}
+
+.login .form-signin .btn {
+    font-size: 20px;
+    width: 545px;
+    height: 40px;
+    border: 1px solid black;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
