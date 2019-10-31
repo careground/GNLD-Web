@@ -23,6 +23,14 @@ class Danger extends Component {
     this.setState({ cares, isLoading: false });
   };
 
+
+  onClick() {
+    axios.post('서버주소').then(response => {
+        this.props.onReceive(response.data.number);
+    });
+  }
+
+
   componentDidMount() {
     // this.getCares();
   }
