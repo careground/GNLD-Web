@@ -3,36 +3,6 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import "./Care.css";
 
-// const Care1 = () => {
-//   return(
-//       <section className="container">
-//           <div className="sideBar">
-//           <ul className="menu_sub">
-//             <h3 className="menu_title"> <a href="/"> 그느르다 </a></h3> 
-//               <h4><a href="/login">로그인</a></h4>
-//               <h4><a href="/care_list">돌봄 대상 리스트</a></h4>
-//               <h4><a href="/danger_list">위험 대상 리스트</a></h4>
-//           </ul>
-//           </div>
-//           <div className="cares">
-//             {cares.map(care => (
-//               <Care
-//                 key={care.id}
-//                 // id={movie.id}
-//                 image={'https://i.pinimg.com/originals/4e/4f/da/4e4fda126c6778bfc2b2a678b58342df.jpg'}
-//                 name={'김예은'}
-//                 birth={'1996년 1월 29일'}
-//                 address={'충청남도 계룡시 두마면 두계리 대림이편한세상 111동 1301호'}
-//                 phone1={'본인 연락처 : 010-9319-2901'}
-//                 phone2={'비상 연락처 : 010-3899-2901'}
-//               />
-//             ))}
-
-//           </div>
-//       </section>
-//   )
-// }
-
 class Care extends Component {
 
   state = {
