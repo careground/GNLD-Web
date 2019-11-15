@@ -9,12 +9,10 @@ class Danger extends Component {
   constructor(props) {
     super(props);
 
-    // Quiz 자체에 state를 할당하고, items에 기본값을 줍니다.
     this.state = {
       data: []
     };
   }
-
 
   componentDidMount() {
     axios.get('http://13.125.105.66:3100/api/emergency').then(res => {
@@ -24,7 +22,6 @@ class Danger extends Component {
       console.log(res.data.data)
     });
   }
-
 
   render() {
 
@@ -41,7 +38,6 @@ class Danger extends Component {
       </div>
 
       <div className="cares">
-  
       {this.state.data.map((care, index) => (
               <DangerList
                 key={index}
@@ -53,7 +49,6 @@ class Danger extends Component {
                 emergency_phone={care.emergency_phone}
               />
             ))}
-
       </div>
     </section>
 
