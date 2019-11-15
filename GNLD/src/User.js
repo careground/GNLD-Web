@@ -26,7 +26,7 @@ class User extends Component{
             <Link to = '/care'>
               <button className="btn" onClick={() => 
                 alert("그느르다에 오신 것을 환영합니다.")
-                } type="button">Sign up</button> <br/>
+                } type="button">Login</button> <br/>
             </Link>
 
           </form>
