@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./User.css";
+import { Link, Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
 class User extends Component{
   render() {
@@ -17,12 +18,17 @@ class User extends Component{
           <form className="form-signin">
             <h2 className="form-signin-heading">Please Login</h2>
             <label for="inputEmail" className="sr-only1">Email address</label>
-            <input type="email" onChange={this.handleEmailChange} id="inputEmail" className="form-control" placeholder="Email address" required autofocus /><br/><br/>
+            <input type="email" onChange={this.handleEmailChange} id="inputEmail" className="form-control1" placeholder="Email address" required autofocus /><br/><br/>
 
             <label for="inputPassword" className="sr-only2">Password</label>
-            <input type="password" onChange={this.handlePasswordChange} id="inputPassword" className="form-control" placeholder="Password" required /><br/><br/>
-            
-            <button className="btn" onClick={this.signUp} type="button">Sign up</button> <br/>
+            <input type="password" onChange={this.handlePasswordChange} id="inputPassword" className="form-control2" placeholder="Password" required /><br/><br/>
+
+            <Link to = '/care'>
+              <button className="btn" onClick={() => 
+                alert("그느르다에 오신 것을 환영합니다.")
+                } type="button">Sign up</button> <br/>
+            </Link>
+
           </form>
           <div>
             {/* <Link to="/">{'Signin'}</Link> */}

@@ -1,0 +1,13 @@
+{
+    "message": "success",
+    "data": [
+      {
+        "user_id": "5dc94fafd4cc1e6d3345a3fc",
+        "name": "이미숙",
+        "birth": "1945월 2월 12일",
+        "address": "용산구 한강로길 23",
+        "phone": "010-2345-2346",
+        "emergency_phone": "010-2323-5645"
+      }
+    ]
+  }
